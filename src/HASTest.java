@@ -1,0 +1,20 @@
+import org.junit.Test;
+
+public class HASTest 
+{
+	@Test
+	public void test() 
+	{
+		Controler has1=new Controler();
+		has1.addlights();
+		has1.TurnOn("light");
+		has1.displayDeviceList();
+		
+		Controler has2=new Controler();
+		has2.addlights();
+		has2.addAC();
+		has2.addTV();
+		has2.displayDeviceList();
+	}
+
+}
